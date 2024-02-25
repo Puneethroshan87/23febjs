@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick</title>
+  </head>
+  <body>
+
+
+<!-- <img src="./Agra1.webp" alt="">
+<img src="./eiffel-tower.jpg" alt="">
+<img src="./HYDERABAD.jpg" alt="">
+<img src="./world.jpg" alt=""> -->
+<!-- <img src="./IMG_4817.JPG" alt=""> -->
+
+
+
+
+    <script>
+
+
+      document.addEventListener("DOMContentLoaded",function() { console.log("hello")})
+
+
+              var one=document.createElement("div");
+      document.body.appendChild(one);
+      one.style.border="3px solid grey";
+      one.setAttribute("style","margin-top:150px")
+              one.style.width="300px";
+              one.style.height="200px";
+              one.style.marginLeft="200px";
+              one.setAttribute("style","box-shadow:10px 10px 10px grey" ,"height=300px","width=100px")
+
+
+      var img1=document.createElement("img");
+      one.appendChild(img1);
+
+    
+
+
+
+      var two=document.createElement("div");
+      two.setAttribute("style","margin-top:150px")
+              document.body.appendChild(two);
+              two.style.marginLeft="100px";
+            //   tw0.style.paddingRight="200px"
+            //   two.style.border="1px solid grey";
+            //   two.setAttribute("style","box-shadow:10px 10px 10px grey")
+             
+
+
+
+      var img2=document.createElement("img");
+      two.appendChild(img2)
+      img2.src="./download.jpg";
+      img2.style.width="300px";
+              img2.style.heigth="300px";
+              img2.style.marginLeft="50px";
+              img2.addEventListener("click",cb1);
+              img2.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+              var img3=document.createElement("img");
+              two.appendChild(img3);
+              img3.src="vk.jpg";
+              img3.style.width="200px";
+              img3.style.heigth="100px";
+              img3.style.paddingRight="20px";
+              img3.addEventListener("click",cb2);
+              img3.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+
+              var img4=document.createElement("img");
+              two.appendChild(img4);
+              img4.src="./images.jpg";
+              img4.style.width="150px";
+              img4.style.heigth="200px";
+              img4.addEventListener("click",cb3);
+              img4.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+
+
+              function cb1(){
+                  img1.src="./download.jpg";
+                  img1.style.width="300px";
+                  img1.style.height="300px";
+                  img1.setAttribute("style","box-shadow:10px 10px 10px grey" )
+              }
+
+              function cb2(){
+                  img1.src="vk.jpg";
+                  img1.style.width="300px";
+                  img1.style.height="200px";
+                  img1.setAttribute("style","box-shadow:10px 10px 10px grey" )
+              }
+
+
+      function cb3(){
+              img1.src="./images.jpg";
+                  img1.style.width="300px";
+                  img1.style.height="300px";
+                  img1.setAttribute("style","box-shadow:10px 10px 10px grey" )
+      }
+      
+
+
+// click text to display image
+
+
+// u=document.createElement("p");
+// document.body,appendChild(u);
+// u.innerText="Click On TEXT to Display IMAGE";
+
+
+w=document.createElement("h1");
+document.body.appendChild(w);
+w.innerText="WORLD";
+w.addEventListener("click",world)
+w.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+function world(){
+w.innerHTML= "<img src=./world.jpg>"
+w.setAttribute("style","box-shadow:10px 10px 10px grey" )
+}
+
+f=document.createElement("h1");
+document.body.appendChild(f);
+f.innerText="AGRA";
+f.addEventListener("click",mmm)
+f.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+function mmm(){
+f.innerHTML= "<img src=./Agra1.webp>"
+f.setAttribute("style","box-shadow:10px 10px 10px grey" )
+}
+
+
+j=document.createElement("h1");
+document.body.appendChild(j);
+j.innerText="HYDERABAD";
+j.addEventListener("click",hyderabad)
+j.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+function hyderabad(){
+j.innerHTML= "<img src=./HYDERABAD.jpg>"
+j.setAttribute("style","box-shadow:10px 10px 10px grey" ,"height=300px","width=100px")
+}
+
+n=document.createElement("h1");
+document.body.appendChild(n);
+n.innerText="PARIS";
+n.addEventListener("click",tower)
+n.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+function tower(){
+n.innerHTML= "<img src=./eiffel-tower.jpg >"
+n.setAttribute("style","box-shadow:10px 10px 10px grey" )
+}
+
+// p=document.createElement("h1");
+// document.body.appendChild(p);
+// p.innerText="PUNEETH ROSHAN";
+// p.addEventListener("click",Puneeth)
+// p.setAttribute("style","box-shadow:10px 10px 10px grey" )
+
+// function Puneeth(){
+// p.innerHTML= "<img src=./IMG_4817.JPG>"
+// p.setAttribute("style","box-shadow:10px 10px 10px grey" , "height:100px")
+// // p.style.height="100px"
+// }
+
+// g.document.createElement("h1");
+// document.body.appendChild(g);
+// g.innerText="HYDERABAD";
+
+// g.addEventListener("click",kk)
+// function kk(){
+//     g.innerHTML="<img src=./HYDERABAD.jpg>"
+// }
+
+// n.document.createElement("h1");
+// document.body.appendChild(n);
+// n.innerText="eifil tower"
+
+
+// n.addEventListener("click",tower)
+
+// function tower(){
+//     n.innerHTML="<img src=./eiffel-tower.jpg >"
+// }
+
+
+
+
+
+    </script>
+  </body>
+</html>
